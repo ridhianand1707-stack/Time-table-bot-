@@ -12,6 +12,7 @@ import json
 import os
 import sqlite3
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import (
@@ -30,6 +31,14 @@ import sheets_fetch
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
 DB_PATH = os.path.join(os.path.dirname(__file__), "users.db")
 SCHEDULE_PATH = os.path.join(os.path.dirname(__file__), "schedule.json")
+IST = ZoneInfo("Asia/Kolkata")
+
+
+def now_ist():
+    """Server clocks (Railway/Render) run on UTC. Without this, /today would
+    show the wrong date for a chunk of the night in India (e.g. at 1am IST,
+    UTC is still 'yesterday')."""
+    return datetime.now(IST)
 
 # How often to re-pull the live Google Sheet, in seconds. 15 min is a
 # reasonable balance between freshness and not hammering Sheets.
@@ -200,6 +209,10 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 def subject_keyboard(chat_id):
     my_subjects = get_user_subjects(chat_id)
     buttons = []
+    buttons.append([
+        InlineKeyboardButton("🌟 Select ALL subjects", callback_data="select_all"),
+        InlineKeyboardButton("🧹 Clear all", callback_data="clear_all"),
+    ])
     for code, name in SUBJECTS.items():
         mark = "✅ " if code in my_subjects else "☐ "
         buttons.append(
@@ -212,7 +225,9 @@ def subject_keyboard(chat_id):
 async def setup(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
     await update.message.reply_text(
-        "Tap each subject you're taking (electives included). Tap again to remove. "
+        "Tap 🌟 Select ALL subjects if you're taking everything B&FS offers "
+        "(this also covers every batch, so nothing gets missed). "
+        "Otherwise tap individual subjects — tap again to remove. "
         "Hit ✅ Done when finished.",
         reply_markup=subject_keyboard(chat_id),
     )
@@ -224,6 +239,18 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await query.answer()
 
     data = query.data
+
+    if data == "select_all":
+        for code in SUBJECTS:
+            batch = "ALL" if code in BATCHED_SUBJECTS else None
+            set_user_subject(chat_id, code, batch)
+        await query.edit_message_reply_markup(reply_markup=subject_keyboard(chat_id))
+        return
+
+    if data == "clear_all":
+        clear_user(chat_id)
+        await query.edit_message_reply_markup(reply_markup=subject_keyboard(chat_id))
+        return
 
     if data.startswith("toggle:"):
         code = data.split(":", 1)[1]
@@ -262,11 +289,14 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             await query.edit_message_text("No subjects selected yet — run /setup again anytime.")
             return
         summary = "\n".join(
-            f"• {c}" + (f" (Batch {b})" if b else "")
+            f"• {c}" + (f" (Batch {b})" if b and b != "ALL" else " (all batches)" if b == "ALL" else "")
             for c, b in my_subjects.items()
         )
         await query.edit_message_text(
-            f"Saved! Your subjects:\n{summary}\n\nNow try /today or /tomorrow."
+            f"Saved! Your subjects:\n{summary}\n\n"
+            f"Whenever you ask for a day, I scan both the combined PGDM "
+            f"timetable and the B&FS-only timetable for these subjects and "
+            f"merge the results. Try /today or /tomorrow now."
         )
 
 
@@ -284,20 +314,20 @@ async def mysubjects(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 async def today(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
-    date_str = datetime.now().strftime("%Y-%m-%d")
+    date_str = now_ist().strftime("%Y-%m-%d")
     await update.message.reply_text(format_day(date_str, chat_id), parse_mode="Markdown")
 
 
 async def tomorrow(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
-    date_str = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d")
+    date_str = (now_ist() + timedelta(days=1)).strftime("%Y-%m-%d")
     await update.message.reply_text(format_day(date_str, chat_id), parse_mode="Markdown")
 
 
 async def week(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
     for i in range(7):
-        date_str = (datetime.now() + timedelta(days=i)).strftime("%Y-%m-%d")
+        date_str = (now_ist() + timedelta(days=i)).strftime("%Y-%m-%d")
         await update.message.reply_text(format_day(date_str, chat_id), parse_mode="Markdown")
 
 
