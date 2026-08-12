@@ -48,7 +48,7 @@ REFRESH_SECONDS = 15 * 60
 SUBJECTS = {
     "FMA": "Financial Management & Accounting",
     "DT": "Design Thinking",
-    "RM": "Research Methods (incl. TA / EBFM post mid-term)",
+    "RM": "Risk Management",
     "TASS": "TASS",
     "FIS": "FIS",
     "AFSA": "AFSA",
@@ -56,11 +56,14 @@ SUBJECTS = {
     "SAPM": "Security Analysis & Portfolio Mgmt",
     "SM": "Strategic Management",
     "TFEM": "TFEM",
-    "FD": "FD",
+    "FD-II": "Financial Derivatives - II (Core, Prof. Himadri Das)",
+    "CRA": "CRA (Prof. Jayatu Sen, post mid-term)",
 }
 
 # Subjects that run in multiple batches in the sheet -> ask which batch.
-BATCHED_SUBJECTS = {"FIS", "SAPM", "TASS", "AFSA", "FD"}
+# FD-II is BFS's own core subject (single track, no batch split) — kept
+# separate from "FD" in the combined sheet, which belongs to other sections.
+BATCHED_SUBJECTS = {"FIS", "SAPM", "TASS", "AFSA"}
 BATCH_OPTIONS = ["I", "II", "III", "ALL"]  # ALL = show every batch's slot
 
 def load_schedule_at_startup():
