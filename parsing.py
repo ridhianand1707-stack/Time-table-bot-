@@ -4,8 +4,8 @@ live Google Sheet CSV export) into the clean schedule.json structure."""
 import re
 from datetime import datetime
 
-KNOWN_CODES = ['SAPM', 'TASS', 'AFSA', 'CSNEG', 'EBFM', 'TFEM', 'TEFM', 'FMA', 'FIS', 'SDM',
-               'PRA', 'MOB', 'LSCM', 'FD', 'DT', 'RM', 'IB', 'SM', 'TA', 'PM', 'DM', 'MR', 'CB']
+KNOWN_CODES = ['SAPM', 'TASS', 'AFSA', 'CSNEG', 'EBFM', 'TFEM', 'TEFM', 'CRA', 'FMA', 'FIS', 'SDM',
+               'PRA', 'MOB', 'LSCM', 'FD-II', 'FD', 'DT', 'RM', 'IB', 'SM', 'TA', 'PM', 'DM', 'MR', 'CB']
 
 SESSION_TIMES = {
     'S1': '8:30 - 10:00', 'S2': '10:15 - 11:45', 'S3': '12:00 - 1:30',
