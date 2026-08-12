@@ -523,7 +523,7 @@
             "canonical": "RM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "7th Floor-Faculty Building",
             "source": "bfs"
           }
         ],
@@ -631,7 +631,7 @@
             "canonical": "SAPM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "BFS-I Classroom",
             "source": "bfs"
           }
         ],
@@ -646,7 +646,7 @@
             "canonical": "SAPM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "BFS-I Classroom",
             "source": "bfs"
           }
         ],
@@ -720,7 +720,7 @@
             "canonical": "FMA",
             "batch": null,
             "prof": "J S Chaudhary",
-            "venue": null,
+            "venue": "Lab 2",
             "source": "combined"
           }
         ],
@@ -753,7 +753,7 @@
             "canonical": "FMA",
             "batch": null,
             "prof": "J S Chaudhary",
-            "venue": null,
+            "venue": "Lab 2",
             "source": "combined"
           }
         ],
@@ -1323,7 +1323,7 @@
             "canonical": "RM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "7th Floor-Faculty Building",
             "source": "bfs"
           }
         ],
@@ -2148,7 +2148,7 @@
             "canonical": "RM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "BFS-I Classroom",
             "source": "bfs"
           }
         ],
@@ -2334,7 +2334,7 @@
             "canonical": "SAPM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "BFS-I Class",
             "source": "bfs"
           }
         ],
@@ -2349,7 +2349,7 @@
             "canonical": "SAPM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "BFS-I Class",
             "source": "bfs"
           }
         ],
@@ -2495,7 +2495,7 @@
             "canonical": "SM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "Orion Classroom",
             "source": "bfs"
           }
         ],
@@ -2528,7 +2528,7 @@
             "canonical": "SAPM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "Orion Classroom",
             "source": "bfs"
           }
         ],
@@ -2700,11 +2700,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -2733,11 +2733,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -2782,7 +2782,7 @@
             "canonical": "RM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "Comp. Lab-I",
             "source": "bfs"
           }
         ],
@@ -3116,7 +3116,7 @@
             "canonical": "RM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "BFS-I Class",
             "source": "bfs"
           }
         ],
@@ -3555,11 +3555,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -3579,11 +3579,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -3944,7 +3944,7 @@
             "canonical": "RM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "BFS-I Class",
             "source": "bfs"
           }
         ],
@@ -4206,7 +4206,7 @@
             "canonical": "SAPM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "Orion Classroom",
             "source": "bfs"
           }
         ],
@@ -4230,7 +4230,7 @@
             "canonical": "SAPM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "Orion Classroom",
             "source": "bfs"
           }
         ],
@@ -4943,7 +4943,7 @@
             "canonical": "RM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "BFS-I Class",
             "source": "bfs"
           }
         ],
@@ -4976,7 +4976,7 @@
             "canonical": "SAPM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "BFS-I Class",
             "source": "bfs"
           }
         ],
@@ -5475,11 +5475,18 @@
             "prof": "K Kanjilal",
             "venue": "6th floor",
             "source": "combined"
+          },
+          {
+            "raw": "CRA(Post Mid Term) Prof. Jayatu Sen",
+            "code": "CRA",
+            "canonical": "CRA",
+            "batch": null,
+            "prof": "Jayatu Sen",
+            "venue": null,
+            "source": "bfs"
           }
         ],
-        "events": [
-          "CRA(Post Mid Term) Prof. Jayatu Sen"
-        ]
+        "events": []
       },
       "S4": {
         "time": "2:30 - 4:00",
@@ -5504,11 +5511,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -5537,11 +5544,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -5654,11 +5661,18 @@
             "prof": "P Bedi",
             "venue": "Audi 2",
             "source": "combined"
+          },
+          {
+            "raw": "CRA(Post Mid Term) Prof. Jayatu Sen",
+            "code": "CRA",
+            "canonical": "CRA",
+            "batch": null,
+            "prof": "Jayatu Sen",
+            "venue": null,
+            "source": "bfs"
           }
         ],
-        "events": [
-          "CRA(Post Mid Term) Prof. Jayatu Sen"
-        ]
+        "events": []
       },
       "S4": {
         "time": "2:30 - 4:00",
@@ -5904,7 +5918,7 @@
             "canonical": "RM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "Orion Class",
             "source": "bfs"
           }
         ],
@@ -5979,7 +5993,7 @@
             "canonical": "RM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "Orion Class",
             "source": "bfs"
           }
         ],
@@ -6414,11 +6428,11 @@
           },
           {
             "raw": "CRA(Post Mid Term) Prof. Jayatu Sen SM Quiz-1 Time: 1.35 p.m Venue: Orion Class",
-            "code": "SM",
-            "canonical": "SM",
+            "code": "CRA",
+            "canonical": "CRA",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "Orion Class",
             "source": "bfs"
           }
         ],
@@ -6447,11 +6461,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -6480,11 +6494,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -6605,11 +6619,18 @@
             "prof": "P Bedi",
             "venue": "Audi 2",
             "source": "combined"
+          },
+          {
+            "raw": "CRA(Post Mid Term) Prof. Jayatu Sen Guest Session: Priyadarshi Dutta",
+            "code": "CRA",
+            "canonical": "CRA",
+            "batch": null,
+            "prof": null,
+            "venue": null,
+            "source": "bfs"
           }
         ],
-        "events": [
-          "CRA(Post Mid Term) Prof. Jayatu Sen Guest Session: Priyadarshi Dutta"
-        ]
+        "events": []
       },
       "S4": {
         "time": "2:30 - 4:00",
@@ -6877,7 +6898,7 @@
             "canonical": "RM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "BFS-I Class",
             "source": "bfs"
           }
         ],
@@ -7433,11 +7454,18 @@
             "prof": "J Gupta",
             "venue": "Audi 2",
             "source": "combined"
+          },
+          {
+            "raw": "CRA(Post Mid Term) Prof. Jayatu Sen Guest Session: Priyadarshi Dutta",
+            "code": "CRA",
+            "canonical": "CRA",
+            "batch": null,
+            "prof": null,
+            "venue": null,
+            "source": "bfs"
           }
         ],
-        "events": [
-          "CRA(Post Mid Term) Prof. Jayatu Sen Guest Session: Priyadarshi Dutta"
-        ]
+        "events": []
       },
       "S4": {
         "time": "2:30 - 4:00",
@@ -7462,11 +7490,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -7495,11 +7523,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -7612,11 +7640,18 @@
             "prof": "P Bedi",
             "venue": "Audi 2",
             "source": "combined"
+          },
+          {
+            "raw": "CRA(Post Mid Term) Prof. Jayatu Sen Guest Session: Priyadarshi Dutta",
+            "code": "CRA",
+            "canonical": "CRA",
+            "batch": null,
+            "prof": null,
+            "venue": null,
+            "source": "bfs"
           }
         ],
-        "events": [
-          "CRA(Post Mid Term) Prof. Jayatu Sen Guest Session: Priyadarshi Dutta"
-        ]
+        "events": []
       },
       "S4": {
         "time": "2:30 - 4:00",
@@ -8289,11 +8324,18 @@
             "prof": "J Gupta",
             "venue": "Audi 2",
             "source": "combined"
+          },
+          {
+            "raw": "CRA(Post Mid Term) Prof. Jayatu Sen",
+            "code": "CRA",
+            "canonical": "CRA",
+            "batch": null,
+            "prof": "Jayatu Sen",
+            "venue": null,
+            "source": "bfs"
           }
         ],
-        "events": [
-          "CRA(Post Mid Term) Prof. Jayatu Sen"
-        ]
+        "events": []
       },
       "S4": {
         "time": "2:30 - 4:00",
@@ -8318,11 +8360,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -8351,11 +8393,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -8468,11 +8510,18 @@
             "prof": "P Bedi",
             "venue": "Audi 2",
             "source": "combined"
+          },
+          {
+            "raw": "CRA(Post Mid Term) Prof. Jayatu Sen",
+            "code": "CRA",
+            "canonical": "CRA",
+            "batch": null,
+            "prof": "Jayatu Sen",
+            "venue": null,
+            "source": "bfs"
           }
         ],
-        "events": [
-          "CRA(Post Mid Term) Prof. Jayatu Sen"
-        ]
+        "events": []
       },
       "S4": {
         "time": "2:30 - 4:00",
@@ -8729,7 +8778,7 @@
             "canonical": "RM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "BFS-I Class",
             "source": "bfs"
           }
         ],
@@ -9223,11 +9272,18 @@
             "prof": "J Gupta",
             "venue": "Audi 2",
             "source": "combined"
+          },
+          {
+            "raw": "CRA(Post Mid Term) Prof. Jayatu Sen",
+            "code": "CRA",
+            "canonical": "CRA",
+            "batch": null,
+            "prof": "Jayatu Sen",
+            "venue": null,
+            "source": "bfs"
           }
         ],
-        "events": [
-          "CRA(Post Mid Term) Prof. Jayatu Sen"
-        ]
+        "events": []
       },
       "S4": {
         "time": "2:30 - 4:00",
@@ -9252,11 +9308,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -9285,11 +9341,11 @@
           },
           {
             "raw": "FD-II  (Prof. Himadri Das) Venue: ITC",
-            "code": "FD",
-            "canonical": "FD",
+            "code": "FD-II",
+            "canonical": "FD-II",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "ITC",
             "source": "bfs"
           }
         ],
@@ -9402,11 +9458,18 @@
             "prof": "P Bedi",
             "venue": "Audi 2",
             "source": "combined"
+          },
+          {
+            "raw": "CRA(Post Mid Term) Prof. Jayatu Sen",
+            "code": "CRA",
+            "canonical": "CRA",
+            "batch": null,
+            "prof": "Jayatu Sen",
+            "venue": null,
+            "source": "bfs"
           }
         ],
-        "events": [
-          "CRA(Post Mid Term) Prof. Jayatu Sen"
-        ]
+        "events": []
       },
       "S4": {
         "time": "2:30 - 4:00",
@@ -9783,7 +9846,7 @@
             "canonical": "SAPM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "BFS-I Class",
             "source": "bfs"
           }
         ],
@@ -9798,7 +9861,7 @@
             "canonical": "SAPM",
             "batch": null,
             "prof": null,
-            "venue": null,
+            "venue": "BFS-I Class",
             "source": "bfs"
           }
         ],
